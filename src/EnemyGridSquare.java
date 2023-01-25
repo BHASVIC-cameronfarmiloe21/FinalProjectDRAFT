@@ -26,8 +26,6 @@ public class EnemyGridSquare extends JButton {
 
     public void setInhabited(Boolean inhabited, String ship){
         this.inhabited = inhabited;
-        this.setBackground(Color.GRAY);
-        this.setOpaque(true);
     }
 
     public void onClick(int currentPlayer) {
