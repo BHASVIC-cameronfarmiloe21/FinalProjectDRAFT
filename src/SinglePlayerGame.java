@@ -4,7 +4,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.security.SecureRandom;
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class SinglePlayerGame extends JFrame {
     private int currentShip;
@@ -491,7 +490,6 @@ public class SinglePlayerGame extends JFrame {
         actionMap.put(f, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO finish build phase
                 System.out.println("f");
                 finishBuildPhase();
             }

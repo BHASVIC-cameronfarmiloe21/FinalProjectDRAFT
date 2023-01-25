@@ -45,6 +45,7 @@ public class EnemyGridSquare extends JButton {
     public Boolean getInhabited() {
         return inhabited;
     }
+
     public boolean getClicked() {
         return clicked;
     }

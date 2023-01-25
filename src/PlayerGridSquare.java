@@ -23,14 +23,17 @@ public class PlayerGridSquare extends JLabel {
         this.playerOwnedBy = player;
         this.setFocusable(false);
     }
+
     public int[] getCoords() {
         return coords;
     }
+
     public void setInhabited(Boolean inhabited){
         this.inhabited = inhabited;
         this.setBackground(Color.GRAY);
         this.setOpaque(true);
     }
+
     public void shootTile() {
         if (inhabited) {
             this.setText("X");
@@ -39,6 +42,7 @@ public class PlayerGridSquare extends JLabel {
             this.setText("O");
         }
     }
+
     public boolean getShot() {
         return shot;
     }

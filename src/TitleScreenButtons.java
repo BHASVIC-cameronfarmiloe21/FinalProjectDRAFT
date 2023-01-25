@@ -19,7 +19,7 @@ public class TitleScreenButtons extends JButton{
             case "playMulti" -> {
                 Border border = BorderFactory.createLineBorder(Color.BLACK);
                 this.setBounds(700,425,200,50);
-                this.setText("Play Multiplayer");
+                this.setText("Play Multiplayer (DNF)");
                 this.setOpaque(true);
                 this.setBorder(border);
             }

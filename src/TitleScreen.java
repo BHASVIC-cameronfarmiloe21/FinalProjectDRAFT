@@ -10,6 +10,7 @@ public class TitleScreen extends JFrame {
         generateButtons();
         this.add(new BlankLabel()); //stops the last added item from taking up the whole screen
     }
+
     private void generateGUI() {
         this.setTitle("Battleship");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,6 +22,7 @@ public class TitleScreen extends JFrame {
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(0x07CBED));
     }
+
     private void generateTitle() {
         JLabel title = new JLabel();
         title.setFont(new Font("Comic Sans", Font.PLAIN, 35));
@@ -31,6 +33,7 @@ public class TitleScreen extends JFrame {
         title.setBounds(725,150,200,50);
         this.add(title);
     }
+
     private void generateButtons() {
         TitleScreenButtons playMulti = new TitleScreenButtons("playMulti");
         TitleScreenButtons playSingle = new TitleScreenButtons("playSingle");

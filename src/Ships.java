@@ -7,6 +7,7 @@ public class Ships extends JLabel{
     private int length;
     private String rotation = "horizontal";
     private int[] coords = {0,0};
+
     Ships(String shipType, int x, int y) {
         this.shipType = shipType;
         this.setOpaque(true);
@@ -22,9 +23,11 @@ public class Ships extends JLabel{
             case "destroyer" -> this.length = 2;
         }
     }
+
     public int getLength() {
         return length;
     }
+
     public void rotate(int i) {
         if (rotation.equals("horizontal")) {
             rotation = "vertical";
@@ -38,6 +41,7 @@ public class Ships extends JLabel{
         }
         this.setBounds(coords[0],coords[1],50,50);
     }
+
     public String getRotation() {
         return rotation;
     }
