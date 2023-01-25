@@ -41,6 +41,7 @@ public class PlayerGridSquare extends JLabel {
         else {
             this.setText("O");
         }
+        shot = true;
     }
 
     public boolean getShot() {
