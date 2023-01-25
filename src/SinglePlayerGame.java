@@ -152,7 +152,7 @@ public class SinglePlayerGame extends JFrame {
         instructions.setForeground(Color.WHITE);
         instructions.setBorder(border);
         instructions.setBounds(1000,100,200,550);
-        instructions.setText("<html>Keybinds:<br>ZXCVB to switch between ships<br>WASD to move them around<br>R to rotate<br>F to finish deploy phase</html>");
+        instructions.setText("<html>Keybinds:<br>ZXCVB to switch between ships<br>WASD to move them around<br>R to rotate<br>F to finish deploy phase (please ensure no ships overlap)</html>");
         instructions.setVisible(true);
         jLayeredPane.add(instructions,0);
     }
@@ -964,7 +964,7 @@ public class SinglePlayerGame extends JFrame {
             winningLabel.setVisible(true);
             winningLabel.setForeground(Color.WHITE);
             jLayeredPane.add(winningLabel,10);
-            System.out.println("Player 1 Wins");
+            System.out.println("Player 2 Wins");
             player2Won = true;
         }
         else if (P2Hits == 17) {
@@ -974,7 +974,7 @@ public class SinglePlayerGame extends JFrame {
             winningLabel.setVisible(true);
             winningLabel.setForeground(Color.WHITE);
             jLayeredPane.add(winningLabel,10);
-            System.out.println("Player 2 Wins");
+            System.out.println("Player 1 Wins");
             player1Won = true;
         }
     }
